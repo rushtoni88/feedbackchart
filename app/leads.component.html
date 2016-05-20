@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+    <h2>Current Active Leads</h2>
+    <ul class="leads">
+        <li *ngFor="let lead of leads" [class.selected]="lead===selectedLead" (click)="onSelect(lead)">
+            <span class="badge">{{lead.id}}</span> {{lead.name}} (<strong>{{lead.companyName}}</strong>) - <span class="current-enquiry-status">{{lead.status}}</span>
+        </li>
+    </ul>
+    <div *ngIf="selectedLead">
+            <h2>
+            {{selectedLead.name | uppercase}} - Selected Lead.
+            </h2>
+    <button (click)="gotoDetail()">View Details</button>
+</div>

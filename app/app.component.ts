@@ -1,7 +1,49 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
+import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router-deprecated';
+
+
+import { LeadService } from './lead.service';
+import { LeadsComponent } from './leads.component';
+import { DashboardComponent } from './dashboard.component';
+import { LeadDetailComponent } from './lead-detail.component';
+import { LeadFormComponent } from './lead-form.component';
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    template: `
+        <h1>{{title}}</h1>
+        <nav>
+            <a [routerLink]="['Dashboard']">Dashboard</a>
+            <a [routerLink]="['Leads']">Leads</a>
+        </nav>
+        <enquiry-form></enquiry-form>
+        <router-outlet></router-outlet>
+    `,
+    styleUrls: ['app/app.component.css'],
+    directives: [ROUTER_DIRECTIVES, LeadFormComponent],
+    providers: [
+      ROUTER_PROVIDERS,
+      LeadService
+    ]
 })
-export class AppComponent { }
+@RouteConfig([
+    {
+        path: '/dashboard',
+        name: 'Dashboard',
+        component: DashboardComponent,
+        useAsDefault: true
+    },
+    {
+        path: '/leads',
+        name: 'Leads',
+        component: LeadsComponent
+    },
+    {
+        path: 'detail/:id',
+        name: 'LeadDetail',
+        component: LeadDetailComponent
+    }
+])
+export class AppComponent {
+        title = 'Main Navigation';
+    }

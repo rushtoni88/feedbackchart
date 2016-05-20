@@ -1,0 +1,13 @@
+<div *ngIf=lead>
+    <h2>{{lead.name}} - <span class="email-display">{{lead.email}}</span></h2>
+    <div><label>ID: </label>{{lead.id}}</div>
+    <div>
+        <label>Name: </label>
+    <input [(ngModel)]="lead.name" placeholder="name">
+    </div>
+    <div>
+        <label>Current Enquiry Status: </label>
+    <input [(ngModel)]="lead.status" placeholder="status">
+    </div>
+    <button (click)="goBack()">Back</button>
+</div>
