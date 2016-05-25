@@ -8,11 +8,11 @@ canvas, base-chart {
     display: inline-block;
     vertical-align: baseline;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 #chart-toggle {
-  margin-bottom: 70px;
+  margin: 15px 0 70px;
 }
 
 h2 { 
@@ -37,16 +37,18 @@ button {
   cursor: hand;
 }
 button:hover {
-  background-color: #cfd8dc;
+  background-color: #e6f3ff;
 }
 button:disabled {
   background-color: #eee;
   color: #aaa; 
   cursor: auto;
 }
+
 /* everywhere else */
+
 * { 
   font-family: Tahoma, Geneva, sans-serif;
   font-weight: lightest;
-  color: #000;
+  color: #000a1a;
 }

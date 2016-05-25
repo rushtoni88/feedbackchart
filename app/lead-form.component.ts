@@ -13,7 +13,7 @@ export class LeadFormComponent {
     
     enquirytype: string[] = ['Development', 'Migration', 'Support', 'Other',];
     
-    model = new Lead(9, "Ian Rushton", "rushtoni88@hotmail.co.uk", "Ians Fruit", "New Enquiry", "Developmentzz");
+    model = new Lead(9, "Example", "example@example.co.uk", "Company Name", "New Enquiry", "Empty");
     
     submitted = false;
     
