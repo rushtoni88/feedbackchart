@@ -5,7 +5,7 @@ import {CHART_DIRECTIVES} from 'ng2-charts/ng2-charts';
 
 @Component({
   selector: 'chart-component',
-  templateUrl: 'app/chart.component.html',
+  templateUrl: 'app/chart.component/chart.component.html',
   directives: [CHART_DIRECTIVES, NgClass, CORE_DIRECTIVES, FORM_DIRECTIVES]
 })
 export class ChartComponent {

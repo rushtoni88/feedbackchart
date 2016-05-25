@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/common';
 
-import { Lead } from './lead';
+import { Lead } from '../lead/lead';
 
 @Component({
     
     selector: 'enquiry-form',
-    templateUrl: 'app/lead-form.component.html'
+    templateUrl: 'app/lead-form.component/lead-form.component.html',
+    styleUrls: ['app/lead-form.component/lead-form.component.css']
     
 })
 export class LeadFormComponent {

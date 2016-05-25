@@ -1,4 +1,4 @@
-import { Lead } from './lead'
+import { Lead } from '../lead/lead'
 
 export var LEADS: Lead[] = [
     { id: 1, name: "Ian Rushton", email: "ian@develodesign.co.uk", companyName: "ABC Logistics", enquirytype: "Development", status: "Awaiting Response" },

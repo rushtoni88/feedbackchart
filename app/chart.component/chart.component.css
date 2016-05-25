@@ -28,4 +28,7 @@
   border-radius: 5px
 }
 
-.chart {display: block; width: 100%;}
+.chart {
+  display: block; 
+  width: 100%;
+}

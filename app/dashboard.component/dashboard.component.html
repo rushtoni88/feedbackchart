@@ -1,4 +1,5 @@
-<div class="dashboard-container">
+<div class="dashboard-container container">
+  <enquiry-form></enquiry-form>
   <h3>Most Recent Leads</h3>
   <div class="grid grid-pad">
     <div *ngFor="let lead of leads" (click)="gotoDetail(lead)" class="col-1-4">

@@ -1,12 +1,13 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { RouteParams } from '@angular/router-deprecated';
 
-import { Lead } from './lead';
-import { LeadService } from './lead.service';
+import { Lead } from '../lead/lead';
+import { LeadService } from '../lead.service/lead.service';
 
 @Component({
     selector: 'my-lead-detail',
-    templateUrl: 'app/lead-detail.component.html'
+    templateUrl: 'app/lead-detail.component/lead-detail.component.html',
+    styleUrls: ['app/lead-detail.component/lead-detail.component.css']
 })
 export class LeadDetailComponent implements OnInit {
     

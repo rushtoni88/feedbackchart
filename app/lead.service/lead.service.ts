@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
-import { Lead } from './lead';
-import { LEADS } from './mock-leads';
+import { Lead } from '../lead/lead';
+import { LEADS } from '../mock-leads/mock-leads';
 
 @Injectable()
 export class LeadService {

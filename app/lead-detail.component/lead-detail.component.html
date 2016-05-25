@@ -1,15 +1,15 @@
-<div *ngIf=lead>
+<div class="lead-detail-container conatiner" *ngIf=lead>
     <h2>{{lead.name}} - <span class="email-display">{{lead.email}}</span></h2>
     <div><label>ID: </label>{{lead.id}}</div>
-    <div>
+    <div class="lead-detail-input">
         <label>Name: </label>
     <input [(ngModel)]="lead.name" placeholder="name">
     </div>
-    <div>
+    <div class="lead-detail-input">
         <label>Current Enquiry Status: </label>
     <input [(ngModel)]="lead.status" placeholder="status">
     </div>
-    <div>
+    <div class="lead-detail-input">
         <label>Type of Enquiry: </label>
     <input [(ngModel)]="lead.enquirytype" placeholder="enquirytype">
     </div>

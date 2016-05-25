@@ -1,7 +1,8 @@
 h1 {
-  font-size: 1.2em;
+  font-size: 2.5em;
   color: white;
   margin-bottom: 0;
+  text-align: right;
 }
 h2 {
   font-size: 2em;
@@ -9,7 +10,7 @@ h2 {
   padding-top: 0;
 }
 nav {
-  background-color: #99d6ff;
+  background: linear-gradient(#4d94ff, #1a75ff 25%);
 }
 nav a {
   padding: 5px 10px;
@@ -28,4 +29,9 @@ nav a:hover {
 }
 nav a.router-link-active {
   color: #039be5;
+}
+
+#globe-img {
+  height: 80px;
+  width: 110px;
 }
