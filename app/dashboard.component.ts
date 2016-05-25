@@ -2,12 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router-deprecated';
 
 import { Lead } from './lead';
-import { LeadService } from './lead.service'
+import { LeadService } from './lead.service';
+import { ChartComponent } from './chart.component';
 
 @Component({
     selector: 'my-dashboard',
     templateUrl: 'app/dashboard.component.html',
-    styleUrls: ['app/dashboard.component.css']
+    styleUrls: ['app/dashboard.component.css'],
+    directives: [ChartComponent]
 })
 export class DashboardComponent implements OnInit {
     

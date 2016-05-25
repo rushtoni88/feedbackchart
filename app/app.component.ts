@@ -7,14 +7,16 @@ import { LeadsComponent } from './leads.component';
 import { DashboardComponent } from './dashboard.component';
 import { LeadDetailComponent } from './lead-detail.component';
 import { LeadFormComponent } from './lead-form.component';
+import { ChartComponent } from './chart.component';
 
 @Component({
     selector: 'my-app',
     template: `
-        <h1>{{title}}</h1>
+        <h1 class="title">{{title}}</h1>
         <nav>
             <a [routerLink]="['Dashboard']">Dashboard</a>
             <a [routerLink]="['Leads']">Leads</a>
+            <a [routerLink]="['Charts']">Charts</a>
         </nav>
         <enquiry-form></enquiry-form>
         <router-outlet></router-outlet>
@@ -39,11 +41,16 @@ import { LeadFormComponent } from './lead-form.component';
         component: LeadsComponent
     },
     {
+        path: '/charts',
+        name: 'Charts',
+        component: ChartComponent
+    },
+    {
         path: 'detail/:id',
         name: 'LeadDetail',
         component: LeadDetailComponent
     }
 ])
 export class AppComponent {
-        title = 'Main Navigation';
+        title = 'Customer HQ';
     }

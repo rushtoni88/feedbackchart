@@ -1,3 +1,20 @@
+.title, h1 {
+  background-color: #0099ff;
+  color: white;
+  padding: 20px 20px;
+}
+
+canvas, base-chart {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#chart-toggle {
+  margin-bottom: 70px;
+}
+
 h2 { 
   color: #000;
   font-family: Tahoma, Geneva, sans-serif;   

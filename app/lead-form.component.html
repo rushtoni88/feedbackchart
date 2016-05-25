@@ -1,7 +1,8 @@
-{{diagnostic}}
 <div class="container">
   <div [hidden]="submitted">
-    <h1>Lead Form</h1>
+    <h1>Dashboard</h1>
+    <h4>New Enquiry</h4>
+    <p>Enter your details below and we will get back to you as soon as possible</p>
     <form *ngIf="active" (ngSubmit)="onSubmit()" #leadForm="ngForm">
       <div class="form-group">
         <label for="name">Name</label>
